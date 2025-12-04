@@ -1,0 +1,153 @@
+.bar-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+.bar-container h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Elke tafel container */
+.table-container {
+  background: #2c2c2c;
+  color: white;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+/* Tafel header */
+.table-container h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.2rem;
+}
+
+.item-badge-large {
+    font-size: 1.4rem;
+  font-weight: bold;
+  background: #444;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 10px;
+  margin: 4px;
+  display: inline-block;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+.item-badge-large.new {
+    font-size: 1.4rem;
+  font-weight: bold;
+  background: #444;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 10px;
+  margin: 4px;
+  display: inline-block;
+  transform: scale(1.3);
+  background-color: #66bb6a;
+}
+
+.table-clear-button {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  font-size: 1.2rem;
+  background: #43a047;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.table-clear-button:hover {
+  background: #66bb6a;
+}
+
+/* Mobiel responsive */
+@media (max-width: 480px) {
+  .item-badge-large {
+    font-size: 1.6rem;
+    padding: 8px 14px;
+  }
+
+  .table-clear-button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
+/* Gegroepeerde items per tafel */
+.items-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.item-badge {
+  background: #444;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+/* Open bestellingen */
+.order-card {
+  background: #1e1e1e;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+}
+
+.order-card ul {
+  margin: 5px 0 0 10px;
+  padding: 0;
+}
+
+.order-card li {
+  list-style: disc;
+}
+
+/* Klaar knop */
+.order-card button {
+  margin-top: 5px;
+  padding: 4px 8px;
+  background: #43a047;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.order-card button:hover {
+  background: #66bb6a;
+}
+
+/* Responsive voor mobiel */
+@media (max-width: 480px) {
+  .table-container {
+    padding: 8px;
+  }
+
+  .items-group {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .item-badge {
+    font-size: 0.85rem;
+  }
+
+  .order-card {
+    font-size: 0.85rem;
+  }
+
+  .order-card button {
+    font-size: 0.75rem;
+  }
+}

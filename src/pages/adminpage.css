@@ -1,0 +1,75 @@
+.admin-container {
+  padding: 30px;
+  background: #1e1e1e;
+  color: white;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.admin-section {
+  margin-bottom: 50px;
+}
+
+.admin-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.admin-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.admin-card {
+  background: #2c2c2c;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+
+.admin-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.admin-card input {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.2rem;
+}
+
+.admin-orders {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.order-card {
+  background: #2c2c2c;
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.order-card button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #e53935;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
