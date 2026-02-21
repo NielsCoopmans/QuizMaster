@@ -40,6 +40,24 @@
   transition: transform 0.3s ease, background 0.3s ease;
 }
 
+/* Top team styling */
+.leaderboard-item.top-team {
+  background: linear-gradient(90deg, #FFD700, #FFC107);
+  color: #000;
+  font-weight: bold;
+  position: relative;
+}
+
+.leaderboard-item.top-team::before {
+  content: "👑";
+  position: absolute;
+  left: -30px;
+  font-size: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
 /* Inhaal-animatie */
 .leaderboard-up {
   animation: glowUp 1.2s ease;
